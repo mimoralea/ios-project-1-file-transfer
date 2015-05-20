@@ -1,10 +1,10 @@
 CFLAGS := -Wall --std=gnu99 -g
 
-default: echoserver echoclient
-webserver: $(LDFLAGS) echoserver.o
-webclient: $(LDFLAGS) echoclient.o
+default: transferserver transferclient
+transferserver: $(LDFLAGS) transferserver.o
+transferclient: $(LDFLAGS) transferclient.o
 
 .PHONY: clean
 
 clean:
-	rm -fr *.o echoserver echoclient
+	rm -fr *.o transferserver transferclient
