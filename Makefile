@@ -1,7 +1,9 @@
 CFLAGS := -Wall --std=gnu99 -g
 
 default: transferserver transferclient
+
 transferserver: $(LDFLAGS) transferserver.o
+
 transferclient: $(LDFLAGS) transferclient.o
 
 .PHONY: clean
