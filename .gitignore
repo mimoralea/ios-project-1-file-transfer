@@ -1,0 +1,15 @@
+# Editor temp files:
+*.swp
+*~
+.\#*
+\#*\#
+.idea/
+
+# objects and binaries
+transferclient
+transferserver
+*.o
+
+# Misc
+.vagrant
+.DS_Store
